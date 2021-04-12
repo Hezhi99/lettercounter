@@ -37,7 +37,7 @@ int main()
   // We ensure the character being examined is an uppercase character with
   // toupper() and then we check if it is in the ASCII range for A-Z (65-90)
   // to determine if we need to increment a count... if it is we increment
-  // the right index using 65 as an 'offset'.
+  // the right index using 65 as an 'offset'..
   for (i = 0; i < strlen(buffer); i++) {
     curchar = toupper(buffer[i]);
     if (curchar >= 65 && curchar <= 90) count[curchar - 65]++;
